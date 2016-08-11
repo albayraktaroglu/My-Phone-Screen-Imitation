@@ -11,8 +11,17 @@
 
 
 @mixin place-it($top, $left){
-    top : $top;
-    left: $left;
+    
+    if $top == 0{
+        left: $left;
+    }
+    if $left == 0{
+        top : $top;
+    }
+    else{
+        top : $top;
+        left: $left;
+    }
 }
 
 body{ 
@@ -30,7 +39,6 @@ body{
 }
 
 .phone-screen{
-    
     position: relative;
     top: 80px;
     margin: auto;
@@ -39,5 +47,14 @@ body{
 
     height: 500px;
     width: 300px;
+}
+
+.home-button{
+    /*margin: auto;*/
+    position: relative;
+    top: 100px;
+   
+    height: 60px;
+    width: 60px;
 }
 
