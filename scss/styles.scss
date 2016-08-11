@@ -1,0 +1,43 @@
+@import "colors";
+
+@mixin round-corners($size){
+    border-radius: $size;
+    box-shadow: 20px 10px 5px grey;
+}
+
+@mixin round-it($size){
+    border-radius: $size;
+}
+
+
+@mixin place-it($top, $left){
+    top : $top;
+    left: $left;
+}
+
+body{ 
+    height: 1000px;
+    width: 800px;
+}
+
+
+.phone-container{
+    position: fixed;
+    @include round-corners(70px);
+    @include place-it(70px, 70px);
+    width: 350px;
+    height: 700px;
+}
+
+.phone-screen{
+    
+    position: relative;
+    top: 80px;
+    margin: auto;
+    
+    @include round-it(5px);
+
+    height: 500px;
+    width: 300px;
+}
+
