@@ -10,6 +10,9 @@ body {
 .home-button {
   background-color: grey; }
 
+.app-icon {
+  background-image: url("/img/icons/rsz_messages.png"); }
+
 body {
   height: 1000px;
   width: 800px; }
@@ -33,8 +36,26 @@ body {
 
 .home-button {
   margin: auto;
+  position: relative;
   top: 100px;
+  border-radius: 200px;
   height: 60px;
   width: 60px; }
+
+.row {
+  margin: auto;
+  padding: 10px;
+  border-style: dotted;
+  position: relative;
+  top: 30px;
+  width: 280px;
+  height: 60px; }
+
+.app-icon {
+  display: inline-block;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px; }
 
 /*# sourceMappingURL=styles.css.map */
