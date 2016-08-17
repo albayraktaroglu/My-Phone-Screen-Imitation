@@ -1,17 +1,35 @@
 body {
-  background-color: teal; }
+  background-color: #D1EEFC; }
 
 .phone-container {
   background-color: black; }
 
+.phone-head {
+  background-color: black; }
+
+.phone-cam {
+  background-color: aliceblue; }
+
+.phone-speaker {
+  background-color: gainsboro; }
+
 .phone-screen {
-  background-image: url("/img/home.jpg"); }
+  background-image: url("/img/rsz_space.jpg"); }
+
+.row-footer {
+  background-color: #ffffff;
+  opacity: 0.6;
+  filter: alpha(opacity=60); }
 
 .home-button {
-  background-color: grey; }
+  background-color: black;
+  border-style: inset; }
 
 .app-icon {
-  background-image: url("/img/icons/rsz_messages.png"); }
+  background-image: url("/img/icons/rsz_facetime.png"); }
+
+div#safari {
+  background-image: url("/img/icons/rsz_safari.png"); }
 
 body {
   height: 1000px;
@@ -20,24 +38,49 @@ body {
 .phone-container {
   position: fixed;
   border-radius: 70px;
-  box-shadow: 20px 10px 5px grey;
+  box-shadow: 10px 5px 5px grey;
   top: 70px;
   left: 70px;
   width: 350px;
   height: 700px; }
 
+.phone-head {
+  margin: auto;
+  position: relative;
+  top: 30px;
+  border-radius: 5px;
+  width: 100px;
+  height: 20px; }
+
+.phone-cam {
+  border-radius: 50px;
+  left: 30px;
+  top: 0px;
+  left: 30px;
+  width: 20px;
+  height: 20px;
+  display: inline-block; }
+
+.phone-speaker {
+  border-radius: 5px;
+  width: 60px;
+  height: 10px;
+  display: inline-block;
+  position: relative;
+  top: -5px; }
+
 .phone-screen {
   position: relative;
-  top: 80px;
+  top: 60px;
   margin: auto;
   border-radius: 5px;
-  height: 500px;
+  height: 530px;
   width: 300px; }
 
 .home-button {
   margin: auto;
   position: relative;
-  top: 100px;
+  top: 75px;
   border-radius: 200px;
   height: 60px;
   width: 60px; }
@@ -50,6 +93,14 @@ body {
   top: 30px;
   width: 280px;
   height: 60px; }
+
+.row-footer {
+  position: relative;
+  top: 360px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 300px;
+  height: 65px; }
 
 .app-icon {
   display: inline-block;

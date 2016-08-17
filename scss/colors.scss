@@ -1,19 +1,42 @@
 body{
-    background-color: teal;
+    background-color:#D1EEFC;
 }
 
 .phone-container{
     background-color: black;
 }
 
+.phone-head{
+    background-color: black;
+}
+
+.phone-cam{
+    background-color: aliceblue;
+}
+
+.phone-speaker{
+    background-color:gainsboro;
+}
+
 .phone-screen{
-    background-image: url("/img/home.jpg");
+    background-image: url("/img/rsz_space.jpg");
+}
+
+.row-footer{
+    background-color: #ffffff;
+    opacity: 0.6;
+    filter: alpha(opacity=60); 
 }
 
 .home-button{
-    background-color: grey;
+    background-color: black;
+    border-style: inset;
 }
 
 .app-icon{
-    background-image: url("/img/icons/rsz_messages.png");
+    background-image: url("/img/icons/rsz_facetime.png");
+}
+
+div#safari{
+    background-image: url("/img/icons/rsz_safari.png");
 }

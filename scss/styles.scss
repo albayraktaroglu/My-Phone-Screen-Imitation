@@ -1,29 +1,5 @@
 @import "colors";
-
-@mixin round-corners($size){
-    border-radius: $size;
-    box-shadow: 20px 10px 5px grey;
-}
-
-@mixin round-it($size){
-    border-radius: $size;
-}
-
-@mixin place-it($top, $left){
-    
-    @if $top == 0px 
-    {
-        left: $left;
-    }
-    @if $left == 0px {
-        top : $top;
-    }
-    @else{
-        top : $top;
-        left: $left;
-    }
-}
-
+@import "mixins";
 
 
 
@@ -41,22 +17,59 @@ body{
     height: 700px;
 }
 
+.phone-head{
+    margin: auto;
+    position: relative;
+    @include place-it(30px,0px);
+    @include round-it(5px);
+    
+    width : 100px;
+    height: 20px;
+
+}
+
+.phone-cam{
+    @include round-it(50px);
+    @include place-it(0px,30px);
+    
+    width: 20px;
+    height: 20px;
+    
+    display: inline-block;
+    
+    
+}
+
+.phone-speaker{
+    @include round-it(5px);
+    
+    width: 60px;
+    height: 10px;
+    
+    display: inline-block;
+    
+    position: relative;
+    @include place-it(-5px,0px);
+}
+
 .phone-screen{
     position: relative;
-    top: 80px;
+    top: 60px;
     margin: auto;
     
     @include round-it(5px);
 
-    height: 500px;
+    height: 530px;
     width: 300px;
+    
+    
 }
 
 .home-button{
     margin: auto;
     position: relative;
     
-    @include place-it(100px,0px);
+    @include place-it(75px,0px);
     @include round-it(200px);
     
     height: 60px;
@@ -73,6 +86,18 @@ body{
     
     width: 280px;
     height: 60px;
+}
+
+.row-footer{
+    
+    position: relative;
+    @include place-it(360px,0px);
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    width: 300px;
+    height: 65px;
 }
 
 .app-icon{
